@@ -9,12 +9,8 @@
             "request": "launch",
             "type": "dart",
             "console": "externalTerminal",
-            "program": "Ejer1-4.dart",
-            
-            //Cambiar el program para ejecutar las demas clases
-            //"program": "Ejer5.dart",
-            //"program": "Ejer6.dart",
-            //"program": "Ejer7.dart"
+            //Para ejecutar la clase en la que este abierta en pantalla
+            "program": "${file}"
         }
     ]
 }
