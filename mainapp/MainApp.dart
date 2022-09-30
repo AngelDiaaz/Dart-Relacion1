@@ -28,7 +28,7 @@ void main(List<String> args) {
   c.echarGasolina(20);
   print(c.gasoline);
 
-  p.recargar(20);
+  p.recargar(10);
   print(p.baterry);
 
 }
