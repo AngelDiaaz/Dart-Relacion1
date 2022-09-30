@@ -1,6 +1,7 @@
+import 'Gasolina.dart';
 import 'vehiculos.dart';
 
-class Camion extends Vehiculos{
+class Camion extends Vehiculos with Gasolina{
     //Propiedades
     int velocidad = 0;
     int _km = 0;

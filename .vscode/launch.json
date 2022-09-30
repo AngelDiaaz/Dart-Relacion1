@@ -8,7 +8,7 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "console": "externalTerminal",
+            "console": "terminal",
             //Para ejecutar la clase en la que este abierta en pantalla
             "program": "${file}"
         }

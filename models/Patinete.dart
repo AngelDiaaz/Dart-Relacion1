@@ -1,6 +1,8 @@
+import 'Electrico.dart';
+import 'Gasolina.dart';
 import 'vehiculos.dart';
 
-class Coche extends Vehiculos{
+class Patinete extends Vehiculos with Electrico{
     //Propiedades
     int velocidad = 0;
     int _km = 0;
@@ -9,7 +11,7 @@ class Coche extends Vehiculos{
 
 
     //Constructor
-    Coche(super.marca, super.modelo, super.year, super.color);
+    Patinete(super.marca, super.modelo, super.year, super.color);
 
     //Getters y setters
     set modifykm(int km) => this._km = km;
