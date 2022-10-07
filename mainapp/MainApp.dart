@@ -1,10 +1,10 @@
-import 'dart:js_util';
+// import 'dart:js_util';
 
 import '../models/Camion.dart';
 import '../models/Coche.dart';
 import '../models/Motocicleta.dart';
 import '../models/Patinete.dart';
-
+import 'dart:math';
 
 
 void main(List<String> args) {
@@ -31,4 +31,13 @@ void main(List<String> args) {
   p.recargar(10);
   print(p.baterry);
 
+  print("_________________________________________");
+
+  /**
+   * 12. Investiga cómo podría generarse un valor aleatorio entre 1 y 10.
+   */
+  
+  Random random = new Random();
+  int randomNumber = random.nextInt(10)+1; 
+  print(randomNumber);
 }
