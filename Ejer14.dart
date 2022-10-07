@@ -1,9 +1,8 @@
 
 import 'dart:convert';
 import 'dart:io';
-import 'dart:_http';
 
-void main() {
+void main() async {
         	print('Antes de la petición');
  
         	httpGet('https://fpiespablopicasso.es/').then((data) {
@@ -14,7 +13,7 @@ print(data);
 }
  
 
-   Future<String> httpGet(String url) {
+   Future<String> httpGet(String url) async {
       var url = Uri.parse('https://fpiespablopicasso.es/');
       var httpClient = HttpClient();
       var request = await httpClient.getUrl(url);
