@@ -1,26 +1,23 @@
-
-import 'dart:convert';
-import 'dart:io';
-
-void main() async {
-        	print('Antes de la petición');
- 
-        	httpGet('https://fpiespablopicasso.es/').then((data) {
-print(data);
-});
- 
-        	print('Fin del programa');
+void main() {
+  print("primera linea"); 
+  
+  saludar().then((data){        
+    print(data);
+  });
+  
+  despedirse().then((data){
+    print(data);
+  });
+  
+  print("última linea");
 }
- 
 
-   Future<String> httpGet(String url) async {
-      var url = Uri.parse('https://fpiespablopicasso.es/');
-      var httpClient = HttpClient();
-      var request = await httpClient.getUrl(url);
-      var response = await request.close();
-      var responseBody = await response.transform(utf8.decoder).join();
-      var data = jsonDecode(responseBody);
 
-      return Future.delayed("Páguina web abierta.");
+Future<String> saludar() { 
+  return Future.delayed( new Duration(seconds: 3), () => 'Hola, ¿qué tal?'); 
+}
+
+Future<String> despedirse() {
+  return Future.delayed(Duration(seconds: 6), () => 'Me alegro, hasta luego!');
 }
 
